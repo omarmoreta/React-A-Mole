@@ -1,4 +1,5 @@
-import { useState } from "react";
+import "./App.css";
+import React, { useState } from "react";
 import MoleContainer from "./MoleContainer";
 
 function App() {
@@ -13,11 +14,12 @@ function App() {
   };
 
   return (
-    <div classname="App">
+    <div className="App">
       <h1>React-a-Mole!</h1>
-      {score}
+      Score: {score}
       {createMoleHill()}
     </div>
   );
 }
+
 export default App;
